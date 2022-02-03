@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+:root {
+  --main-font-color: #ffffff;
+  --venus: #eda249;
+  --earth: #6d2ed5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.nav {
+  background: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.2rem 3.2rem;
+  text-transform: uppercase;
+}
+
+.nav__title {
+  color: white;
+  letter-spacing: -1.05px;
+  font-weight: 500;
+  font-family: "Antonio", sans-serif;
+  font-size: 2.8rem;
+}
+
+.nav__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.nav__item {
+  height: auto;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.content {
+  min-width: 100vh;
+  min-height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */

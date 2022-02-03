@@ -1,0 +1,34 @@
+.nav {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 3.2rem;
+  text-transform: uppercase;
+  &__title {
+    color: white;
+    letter-spacing: -1.05px;
+    font-weight: 500;
+    font-family: "Antonio", sans-serif;
+    font-size: 2.8rem;
+  }
+  &__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+  }
+  &__item {
+    height: auto;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+}

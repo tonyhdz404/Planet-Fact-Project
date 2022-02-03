@@ -1,0 +1,31 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+// Colors
+:root {
+  --main-font-color: #ffffff;
+  --venus: #eda249;
+  --earth: #6d2ed5;
+}
+
+// Global Resets
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  //   color: var(--main-font-color);
+  min-height: 100vh;
+  min-width: 100vh;
+  //   background-color: yellow;
+}
