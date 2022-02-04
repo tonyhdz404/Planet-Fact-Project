@@ -3,6 +3,8 @@
 // Colors
 :root {
   --main-font-color: #ffffff;
+  --accent-color: #838391;
+  --main-background-color: #070724;
   --venus: #eda249;
   --earth: #6d2ed5;
 }
@@ -24,8 +26,11 @@ html {
 }
 
 body {
-  //   color: var(--main-font-color);
+  color: var(--main-font-color);
   min-height: 100vh;
   min-width: 100vh;
-  //   background-color: yellow;
+  background-color: var(--main-background-color);
+  background-image: url("../assets/background-stars.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

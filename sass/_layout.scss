@@ -1,4 +1,12 @@
 .content {
   min-width: 100vh;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.overview {
+  height: 100%;
+
+  flex-grow: 1;
+  padding: 0 16.5rem;
 }
