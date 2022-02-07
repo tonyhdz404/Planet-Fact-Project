@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.2rem 3.2rem;
+  padding: 0 3.2rem 2.2rem 3.2rem;
   text-transform: uppercase;
   height: 8.5rem;
   &__title {
@@ -19,7 +19,9 @@
     align-self: stretch;
   }
   &__item {
-    height: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
     &:not(:last-child) {
       margin-right: 3.3rem;
     }
@@ -31,19 +33,25 @@
     font-weight: 700;
     line-height: 2.5rem;
     font-size: 1.1rem;
+    transition: all 0.25s;
+    &:hover {
+      color: var(--main-font-color);
+    }
   }
 }
 //-------------------------------------------------------
 // Planet View
 .planet-view {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .planet-image-container {
   width: 100%;
+  height: 58.2rem;
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -53,6 +61,11 @@
 .planet-content {
   color: var(--main-font-color);
   width: 35rem;
+  height: 58.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__name {
     font-family: "Antonio", sans-serif;
     font-weight: 500;
@@ -124,7 +137,7 @@
 //-------------------------------------------------------
 // Planet Data
 .planet-data {
-  margin-top: 8.7rem;
+  margin-top: 4.7rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 12.8rem;
@@ -152,7 +165,85 @@
     letter-spacing: -1.5px;
   }
 }
+//-------------------------------------------------------
+// Planet Geology Pin
+.geology {
+  position: absolute;
+  width: 16.3rem;
+  height: 19.9rem;
+  top: 370px;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-.btn-active {
-  background-color: #6d2ed5;
+.btn-active-0 {
+  background-color: var(--mercury);
+}
+.btn-active-1 {
+  background-color: var(--venus);
+}
+.btn-active-2 {
+  background-color: var(--earth);
+}
+.btn-active-3 {
+  background-color: var(--mars);
+}
+.btn-active-4 {
+  background-color: var(--jupiter);
+}
+.btn-active-5 {
+  background-color: var(--saturn);
+}
+.btn-active-6 {
+  background-color: var(--uranus);
+}
+.btn-active-7 {
+  background-color: var(--neptune);
+}
+
+.link__hover-0 {
+  &:hover {
+    border-top: 5px solid var(--mercury);
+  }
+}
+.link__hover-1 {
+  &:hover {
+    border-top: 5px solid var(--venus);
+  }
+}
+.link__hover-2 {
+  &:hover {
+    border-top: 5px solid var(--earth);
+  }
+}
+.link__hover-3 {
+  &:hover {
+    border-top: 5px solid var(--mars);
+  }
+}
+.link__hover-4 {
+  &:hover {
+    border-top: 5px solid var(--jupiter);
+  }
+}
+.link__hover-5 {
+  &:hover {
+    border-top: 5px solid var(--saturn);
+  }
+}
+.link__hover-6 {
+  &:hover {
+    border-top: 5px solid var(--uranus);
+  }
+}
+.link__hover-7 {
+  &:hover {
+    border-top: 5px solid var(--neptune);
+  }
+}
+
+.hidden {
+  display: none;
 }
